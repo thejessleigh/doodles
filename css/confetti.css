@@ -1,9 +1,11 @@
+@import "base.css";
+
 body {
     background-color: #1d1d16;
+}
+
+.container {
     height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 h1 {
@@ -15,9 +17,17 @@ h1 {
     left: 50%;
     transform: translate(-50%,-50%);
     color: #aaaaaa;
+    z-index: 2;
 }
 
-canvas {
-    display: inline-block;
-    border: 1px dotted #777777;
+.footer {
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.footer a i {
+    color: #ffffce;
+    margin: 1rem;
+    opacity: 0.2;
 }
