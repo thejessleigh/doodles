@@ -1,0 +1,33 @@
+@import "base.css";
+
+body {
+    background-color: #1d1d16;
+}
+
+.container {
+    height: 100%;
+}
+
+h1 {
+    display: inline-block;
+    font-family: 'Futura', sans-serif;
+    opacity: 0.3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #aaaaaa;
+    z-index: 2;
+}
+
+.footer {
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.footer a i {
+    color: #ffffce;
+    margin: 1rem;
+    opacity: 0.2;
+}
