@@ -2,10 +2,6 @@
 var canvas = document.querySelector("#canvas"),
     context = canvas.getContext('2d');
 
-// set canvas to window size
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
 // play around with these, but it doesn't perform well with more than 15k starting dots
 var config = {
     dotNum: 10000,
@@ -129,7 +125,16 @@ var frame = function () {
     window.requestAnimationFrame(frame);
 };
 
+function onLoad() {
+    // set canvas to window size
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
 
-frame();
+    frame();
 
-initDots(config.dotNum);
+    initDots(config.dotNum);
+}
+
+onLoad();
+
+window.addEventListener("resize", onLoad);
