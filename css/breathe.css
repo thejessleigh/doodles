@@ -9,6 +9,24 @@ html, body {
     /*   cursor: None; */
 }
 
+.content {
+    height: 75%;
+}
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-size: auto;
+    height: 20%;
+}
+
+.footer a {
+    color: black;
+    margin-left: 1rem;
+}
+
+
 .circle {
     background: #ff0000;
     width: 20rem;
