@@ -32,8 +32,31 @@ function onLoad() {
     }
     document.getElementById("breather").classList.add(colorScheme);
 
-    console.log(document.getElementById("breather").classList)
-    // document.getElementById("container").classList.add(colorScheme + "-body");
+    console.log(document.getElementById("breather").classList);
+
+    setTimeout(
+        function() {
+            $("#adjust").fadeIn(1000);
+        }, 5000
+    );
 }
 
 onLoad();
+
+var slower = document.getElementById("slower");
+var faster = document.getElementById("faster");
+var speed = 16;
+
+slower.addEventListener("click", function() {
+    speed += 2;
+    console.log(`Total animation time increased to ${speed}`);
+    document.getElementById("breather").style.WebkitAnimationDuration = `${speed}s`;
+    document.getElementById("breather").style.AnimationDuration = `${speed}s`;
+});
+
+faster.addEventListener("click", function() {
+    speed -=2;
+    console.log(`Total animation time decreased to ${speed}`);
+    document.getElementById("breather").style.WebkitAnimationDuration = `${speed}s`;
+    document.getElementById("breather").style.AnimationDuration = `${speed}s`;
+});
