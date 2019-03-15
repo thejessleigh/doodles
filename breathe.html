@@ -5,15 +5,21 @@
         <title>Simply Breathe</title>
         <link rel="stylesheet" href="css/breathe.css" type="text/css" media="screen">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <!--<link rel="shortcut icon" href="assets/favicon-exclamation.ico" type="image/x-icon">-->
     </head>
     <body>
         <div class="container">
+            <h1>Simply Breathe</h1>
             <div class="content">
-                <h3>Breathe in while the circle inflates</h3>
-                <h3>Hold breath as circle pulses twice</h3>
+                <p>Inhale while the circle inflates</p>
+                <p>Hold breath as circle pulses twice</p>
                 <div class="circle" id="breather"></div>
-                <h3>Exhale as circle deflates</h3>
+                <p>Exhale as circle deflates</p>
+                <div id="adjust">
+                    <p>Click to adjust breathing speed</p>
+                    <p><button id="slower"><i class="fas fa-minus fa-3x"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="faster"><i class="fas fa-plus fa-3x"></i></button></p>
+                </div>
             </div>
             <div class="footer">
                 <a href="https://jessunrein.com"><i class="fas fa-user fa-2x"></i></a>
