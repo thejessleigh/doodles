@@ -162,6 +162,10 @@ button:focus {
         height: 50%;
     }
     .footer {
-        height: 25%;
+        height: 35%;
+    }
+    .footer a i {
+        font-size:1.5em;
+        color: #000000;
     }
 }
