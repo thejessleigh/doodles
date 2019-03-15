@@ -7,7 +7,7 @@
 }
 
 .content {
-    height: 75%;
+    height: 65%;
 }
 
 .footer {
@@ -27,6 +27,9 @@
     height: 20em;
     margin: auto;
     border-radius: 100%;
+}
+
+#breather {
     -webkit-animation: grow 16s infinite;
 }
 
@@ -64,6 +67,21 @@
 
 .night {
     background: linear-gradient(#353032, #82767c);
+}
+
+#adjust {
+    display: none;
+}
+
+button {
+    border: none;
+    background-color: #fff;
+}
+
+button:hover,
+button:focus {
+    color: #474a50;
+    outline: 0;
 }
 
 @-webkit-keyframes grow {
