@@ -4,6 +4,7 @@
     font-family: futura, sans-serif;
     text-align: center;
     height:600px;
+    width:100%;
 }
 
 .content {
@@ -12,7 +13,7 @@
 
 .footer {
     align-items: flex-end;
-    height: 20%;
+    height: 65%;
 }
 
 .footer a i {
@@ -162,10 +163,10 @@ button:focus {
         height: 50%;
     }
     .footer {
-        height: 35%;
+        height: 25%;
     }
     .footer a i {
         font-size:1.5em;
-        color: #000000;
+        margin:0 .5em;
     }
 }
