@@ -3,6 +3,7 @@
 .container {
     font-family: futura, sans-serif;
     text-align: center;
+    height:600px;
 }
 
 .content {
@@ -15,15 +16,15 @@
 }
 
 .footer a i {
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-right: 1em;
+    margin-left: 1em;
     color: #000000;
 }
 
 .circle {
     background: #f64c72;
-    width: 20rem;
-    height: 20rem;
+    width: 20em;
+    height: 20em;
     margin: auto;
     border-radius: 100%;
     -webkit-animation: grow 16s infinite;
@@ -128,5 +129,21 @@
         -o-transform: scale(0);
         -ms-transform: scale(0);
         transform: scale(0);
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+    .circle {
+        width:10em;
+        height:10em;
+    }
+    .content {
+        height: 50%;
+    }
+    .footer {
+        height: 25%;
     }
 }
