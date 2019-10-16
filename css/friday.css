@@ -1,0 +1,10 @@
+@import "base.css";
+
+.container {
+    font-family: futura, sans-serif;
+    text-align: center;
+    height: 600px;
+    margin-top:25%;
+    width: 100%;
+    font-size: 6em;
+}
