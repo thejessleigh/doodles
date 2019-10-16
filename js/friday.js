@@ -1,7 +1,7 @@
 function onLoad() {
     let today = new Date().getDay();
     let element = document.getElementById("friday");
-    if (today === 3) {
+    if (today === 5) {
       element.innerHTML = "YES";
       let month = new Date().getMonth();
 
