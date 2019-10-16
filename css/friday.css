@@ -8,3 +8,19 @@
     width: 100%;
     font-size: 6em;
 }
+
+.spring{
+    background-color: pink;
+}
+
+.summer{
+    background-color: green;
+}
+
+.autumn{
+    background-color: orange;
+}
+
+.winter{
+    background-color: lightblue;
+}
