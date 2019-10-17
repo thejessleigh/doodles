@@ -35,25 +35,30 @@
     -moz-animation: fallingElement 10s infinite linear;
 }
 
-
-.fallingElement span:nth-child(5n+5) {
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
-}
     
-.fallingElement span:nth-child(3n+2) {
-    -webkit-animation-delay: 3s;
-    -moz-animation-delay: 3s;
-}
-    
-.fallingElement span:nth-child(2n+5) {
+.fallingElement span:nth-child(2n) {
     -webkit-animation-delay: 5.5s;
     -moz-animation-delay: 5.5s;
 }
 
-.fallingElement span:nth-child(7n+2) {
+.fallingElement span:nth-child(3n) {
+    -webkit-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+}
+
+.fallingElement span:nth-child(5n) {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+}
+
+.fallingElement span:nth-child(7n) {
     -webkit-animation-delay: 9s;
     -moz-animation-delay: 9s;
+}
+
+.fallingElement span:nth-child(9n) {
+    -webkit-animation-delay: 2.3s;
+    -moz-animation-delay: 2.3s;
 }
 
 @-webkit-keyframes fallingElement {
