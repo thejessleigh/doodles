@@ -15,12 +15,17 @@ function onLoad() {
           break;
         case month >= 9 && month < 12:
           season = "autumn";
+          document.body.style.backgroundColor = "fff7c8";
           break;
         default:
           season = "winter";
+          document.body.style.backgroundColor = "dcf0f4";
           break;
       }
-      document.body.classList.add(season);
+      let spans = document.getElementsByClassName("fallingElement");
+      Array.from(spans).forEach(function (element) {
+        element.classList.add(season);
+      });
     } else {
       element.innerHTML = "NO";
     }
