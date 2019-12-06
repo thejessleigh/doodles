@@ -4,25 +4,25 @@
     font-family: futura, sans-serif;
     text-align: center;
     height: 100%;
-    margin-top:10%;
+    margin-top: 10%;
     width: 100%;
     font-size: 12em;
 }
 
-.spring span{
-    background:url("../img/sakura.png");
+.spring span {
+    background: url("../img/sakura.png");
 }
 
-.summer span{
-    background:url("../img/summer-leaf.png")
+.summer span {
+    background: url("../img/summer-leaf.png")
 }
 
-.autumn span{
-    background:url("../img/autumn-leaf.png");
+.autumn span {
+    background: url("../img/autumn-leaf.png");
 }
 
-.winter span{
-    background:url("../img/snowflake.png")
+.winter span {
+    background: url("../img/snowflake.png")
 }
 
 .fallingElement span {
@@ -30,25 +30,25 @@
     width: 80px;
     height: 80px;
     margin: -280px 40px 54px -34px;
-        
+
     -webkit-animation: fallingElement 10s infinite linear;
     -moz-animation: fallingElement 10s infinite linear;
 }
 
-    
-.fallingElement span:nth-child(2n) {
-    -webkit-animation-delay: 5.5s;
-    -moz-animation-delay: 5.5s;
+
+.fallingElement span:nth-child(5n+5) {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
 }
 
-.fallingElement span:nth-child(3n) {
+.fallingElement span:nth-child(3n+2) {
     -webkit-animation-delay: 3s;
     -moz-animation-delay: 3s;
 }
 
-.fallingElement span:nth-child(5n) {
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
+.fallingElement span:nth-child(2n+5) {
+    -webkit-animation-delay: 5.5s;
+    -moz-animation-delay: 5.5s;
 }
 
 .fallingElement span:nth-child(7n) {
@@ -66,10 +66,12 @@
         opacity: 1;
         -webkit-transform: translate(0, 0px) rotateZ(0deg);
     }
+
     75% {
         opacity: 1;
         -webkit-transform: translate(100px, 600px) rotateZ(270deg);
     }
+
     100% {
         opacity: 0;
         -webkit-transform: translate(150px, 800px) rotateZ(360deg);
