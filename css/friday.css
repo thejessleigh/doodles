@@ -51,9 +51,14 @@
     -moz-animation-delay: 5.5s;
 }
 
-.fallingElement span:nth-child(7n+2) {
+.fallingElement span:nth-child(7n) {
     -webkit-animation-delay: 9s;
     -moz-animation-delay: 9s;
+}
+
+.fallingElement span:nth-child(9n) {
+    -webkit-animation-delay: 2.3s;
+    -moz-animation-delay: 2.3s;
 }
 
 @-webkit-keyframes fallingElement {
