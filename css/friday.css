@@ -1,74 +1,82 @@
 @import "base.css";
 
 #friday {
-    font-family: futura, sans-serif;
-    text-align: center;
-    height: 100%;
-    margin-top: 10%;
-    width: 100%;
-    font-size: 12em;
+  font-family: futura, sans-serif;
+  text-align: center;
+  height: 100%;
+  margin-top: 10%;
+  width: 100%;
+  font-size: 12em;
 }
 
 .spring span {
-    background: url("../img/sakura.png");
+  background: url("../img/sakura.png");
 }
 
 .summer span {
-    background: url("../img/summer-leaf.png")
+  background: url("../img/summer-leaf.png")
+}
+
+.autumn {
+  background-color: #fff7c8;
 }
 
 .autumn span {
-    background: url("../img/autumn-leaf.png");
+  background: url("../img/autumn-leaf.png");
+}
+
+.winter {
+  background-color: #dcf0f4;
 }
 
 .winter span {
-    background: url("../img/snowflake.png")
+  background: url("../img/snowflake.png")
 }
 
 .fallingElement span {
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-    margin: -280px 40px 54px -34px;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: -280px 40px 54px -34px;
 
-    -webkit-animation: fallingElement 10s infinite linear;
-    -moz-animation: fallingElement 10s infinite linear;
+  -webkit-animation: fallingElement 10s infinite linear;
+  -moz-animation: fallingElement 10s infinite linear;
 }
 
 
 .fallingElement span:nth-child(5n+5) {
-    -webkit-animation-delay: 1s;
-    -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
 }
 
 .fallingElement span:nth-child(3n+2) {
-    -webkit-animation-delay: 3s;
-    -moz-animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
 }
 
 .fallingElement span:nth-child(2n+5) {
-    -webkit-animation-delay: 5.5s;
-    -moz-animation-delay: 5.5s;
+  -webkit-animation-delay: 5.5s;
+  -moz-animation-delay: 5.5s;
 }
 
 .fallingElement span:nth-child(7n+2) {
-    -webkit-animation-delay: 9s;
-    -moz-animation-delay: 9s;
+  -webkit-animation-delay: 9s;
+  -moz-animation-delay: 9s;
 }
 
 @-webkit-keyframes fallingElement {
-    0% {
-        opacity: 1;
-        -webkit-transform: translate(0, 0px) rotateZ(0deg);
-    }
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0px) rotateZ(0deg);
+  }
 
-    75% {
-        opacity: 1;
-        -webkit-transform: translate(100px, 600px) rotateZ(270deg);
-    }
+  75% {
+    opacity: 1;
+    -webkit-transform: translate(100px, 600px) rotateZ(270deg);
+  }
 
-    100% {
-        opacity: 0;
-        -webkit-transform: translate(150px, 800px) rotateZ(360deg);
-    }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(150px, 800px) rotateZ(360deg);
+  }
 }

@@ -1,34 +1,38 @@
 (function IsItFridayYet() {
   const date = new Date();
-  const theMonth = date.getMonth();
-  const theDay = date.getDay();
-  const element = document.getElementById("friday");
-  const spans = document.getElementsByClassName("fallingElement");
+  const thisMonth = date.getMonth();
+  const thisDay = date.getDay();
+  const theBody = document.body;
+  const textElement = document.getElementById("friday");
   let season = "";
 
-  if (theDay === 5) {
-    element.innerHTML = "YES";
-
-    switch (true) {
-      case theMonth >= 3 && theMonth < 6:
-        season = "spring";
-        break;
-      case theMonth >= 6 && theMonth < 9:
-        season = "summer";
-        break;
-      case theMonth >= 9 && theMonth < 12:
-        season = "autumn";
-        document.body.style.backgroundColor = "fff7c8";
-        break;
-      default:
-        season = "winter";
-        document.body.style.backgroundColor = "dcf0f4";
-        break;
-    }
-    Array.from(spans).forEach(function (element) {
-      element.classList.add(season);
-    });
-  } else {
-    element.innerHTML = "NO";
+  // return a programatic yes on Fridays to print on homepage.
+  function isFriday(n) {
+    return (n == 5 ? "YES" : "NO");
   }
+
+  // return a season string to switch up body class later.
+  function thisSeason(range) {
+    if(range >= 2 && range < 5 ) {
+      return "spring";
+    } else if(range >= 5 && range < 8 ) {
+      return "summer";
+    } else if(range >= 8 && range < 11) {
+      return "fall";
+    } else if(range >= 11 || range <= 2) {
+      return "winter";
+    } else {
+      return "";
+    }
+  }
+
+  // restyle the site based on the season because we can dammit.
+  function seasonStyles() {
+    season = thisSeason(thisMonth);
+    theBody.classList.add(season);
+  }
+
+  textElement.innerHTML = isFriday(thisDay);
+  seasonStyles();
+
 })();
