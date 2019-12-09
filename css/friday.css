@@ -64,6 +64,11 @@
   -moz-animation-delay: 9s;
 }
 
+.fallingElement span:nth-child(9n) {
+    -webkit-animation-delay: 2.3s;
+    -moz-animation-delay: 2.3s;
+}
+
 @-webkit-keyframes fallingElement {
   0% {
     opacity: 1;
